@@ -1,0 +1,459 @@
+
+esp_atmel_final_code.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000022  00800100  00000262  000002d6  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000262  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  000002f8  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00000328  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000038  00000000  00000000  00000368  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00000a18  00000000  00000000  000003a0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00000856  00000000  00000000  00000db8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   0000034c  00000000  00000000  0000160e  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000078  00000000  00000000  0000195c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    00000449  00000000  00000000  000019d4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    00000162  00000000  00000000  00001e1d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000028  00000000  00000000  00001f7f  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	58 c0       	rjmp	.+176    	; 0xb6 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	56 c0       	rjmp	.+172    	; 0xb6 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	54 c0       	rjmp	.+168    	; 0xb6 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	52 c0       	rjmp	.+164    	; 0xb6 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	50 c0       	rjmp	.+160    	; 0xb6 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	4e c0       	rjmp	.+156    	; 0xb6 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	4c c0       	rjmp	.+152    	; 0xb6 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	4a c0       	rjmp	.+148    	; 0xb6 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	48 c0       	rjmp	.+144    	; 0xb6 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	46 c0       	rjmp	.+140    	; 0xb6 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	44 c0       	rjmp	.+136    	; 0xb6 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	42 c0       	rjmp	.+132    	; 0xb6 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	40 c0       	rjmp	.+128    	; 0xb6 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	3e c0       	rjmp	.+124    	; 0xb6 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	3c c0       	rjmp	.+120    	; 0xb6 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	3a c0       	rjmp	.+116    	; 0xb6 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	38 c0       	rjmp	.+112    	; 0xb6 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	36 c0       	rjmp	.+108    	; 0xb6 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	34 c0       	rjmp	.+104    	; 0xb6 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	32 c0       	rjmp	.+100    	; 0xb6 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	30 c0       	rjmp	.+96     	; 0xb6 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	2e c0       	rjmp	.+92     	; 0xb6 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	2c c0       	rjmp	.+88     	; 0xb6 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	2a c0       	rjmp	.+84     	; 0xb6 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	28 c0       	rjmp	.+80     	; 0xb6 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	26 c0       	rjmp	.+76     	; 0xb6 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	24 c0       	rjmp	.+72     	; 0xb6 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	22 c0       	rjmp	.+68     	; 0xb6 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	20 c0       	rjmp	.+64     	; 0xb6 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	1e c0       	rjmp	.+60     	; 0xb6 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	1c c0       	rjmp	.+56     	; 0xb6 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	1a c0       	rjmp	.+52     	; 0xb6 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	18 c0       	rjmp	.+48     	; 0xb6 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	16 c0       	rjmp	.+44     	; 0xb6 <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_copy_data>:
+  98:	11 e0       	ldi	r17, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	e2 e6       	ldi	r30, 0x62	; 98
+  a0:	f2 e0       	ldi	r31, 0x02	; 2
+  a2:	00 e0       	ldi	r16, 0x00	; 0
+  a4:	0b bf       	out	0x3b, r16	; 59
+  a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
+  a8:	07 90       	elpm	r0, Z+
+  aa:	0d 92       	st	X+, r0
+  ac:	a2 32       	cpi	r26, 0x22	; 34
+  ae:	b1 07       	cpc	r27, r17
+  b0:	d9 f7       	brne	.-10     	; 0xa8 <__do_copy_data+0x10>
+  b2:	36 d0       	rcall	.+108    	; 0x120 <main>
+  b4:	d4 c0       	rjmp	.+424    	; 0x25e <_exit>
+
+000000b6 <__bad_interrupt>:
+  b6:	a4 cf       	rjmp	.-184    	; 0x0 <__vectors>
+
+000000b8 <uart0_init>:
+    }
+}
+
+// --- UART 0 SETUP ---
+void uart0_init(uint16_t ubrr_value) {
+    UBRR0H = (uint8_t)(ubrr_value >> 8);
+  b8:	90 93 90 00 	sts	0x0090, r25	; 0x800090 <__TEXT_REGION_LENGTH__+0x7e0090>
+    UBRR0L = (uint8_t)ubrr_value;
+  bc:	89 b9       	out	0x09, r24	; 9
+    UCSR0B = (1 << RXEN0); // Enable Receiver hardware
+  be:	80 e1       	ldi	r24, 0x10	; 16
+  c0:	8a b9       	out	0x0a, r24	; 10
+    UCSR0C = (1 << UCSZ01) | (1 << UCSZ00); // 8 Data Bits, 1 Stop Bit
+  c2:	86 e0       	ldi	r24, 0x06	; 6
+  c4:	80 93 95 00 	sts	0x0095, r24	; 0x800095 <__TEXT_REGION_LENGTH__+0x7e0095>
+  c8:	08 95       	ret
+
+000000ca <uart0_receive_char>:
+}
+
+// --- UART READ BYTE ---
+char uart0_receive_char(void) {
+    while (!(UCSR0A & (1 << RXC0))); // Wait until a byte arrives
+  ca:	5f 9b       	sbis	0x0b, 7	; 11
+  cc:	fe cf       	rjmp	.-4      	; 0xca <uart0_receive_char>
+    return UDR0;
+  ce:	8c b1       	in	r24, 0x0c	; 12
+}
+  d0:	08 95       	ret
+
+000000d2 <uart0_receive_string>:
+
+// --- UART READ STRING ---
+void uart0_receive_string(char *buffer, uint8_t max_length) {
+  d2:	0f 93       	push	r16
+  d4:	1f 93       	push	r17
+  d6:	cf 93       	push	r28
+  d8:	df 93       	push	r29
+  da:	ec 01       	movw	r28, r24
+  dc:	06 2f       	mov	r16, r22
+    uint8_t index = 0;
+  de:	10 e0       	ldi	r17, 0x00	; 0
+    char c;
+    
+    while (index < (max_length - 1)) {
+  e0:	0f c0       	rjmp	.+30     	; 0x100 <uart0_receive_string+0x2e>
+        c = uart0_receive_char();
+  e2:	f3 df       	rcall	.-26     	; 0xca <uart0_receive_char>
+        
+        if (c == '\0') continue; // Ignore stray null bytes
+  e4:	88 23       	and	r24, r24
+  e6:	61 f0       	breq	.+24     	; 0x100 <uart0_receive_string+0x2e>
+        
+        // Stop reading exactly when the ESP32 sends the '\n'
+        if (c == '\n' || c == '\r') {
+  e8:	8a 30       	cpi	r24, 0x0A	; 10
+  ea:	11 f0       	breq	.+4      	; 0xf0 <uart0_receive_string+0x1e>
+  ec:	8d 30       	cpi	r24, 0x0D	; 13
+  ee:	19 f4       	brne	.+6      	; 0xf6 <uart0_receive_string+0x24>
+            if (index > 0) break; // Break out to evaluate the token
+  f0:	11 23       	and	r17, r17
+  f2:	31 f0       	breq	.+12     	; 0x100 <uart0_receive_string+0x2e>
+  f4:	0d c0       	rjmp	.+26     	; 0x110 <uart0_receive_string+0x3e>
+            continue;
+        }
+        buffer[index++] = c;
+  f6:	fe 01       	movw	r30, r28
+  f8:	e1 0f       	add	r30, r17
+  fa:	f1 1d       	adc	r31, r1
+  fc:	80 83       	st	Z, r24
+  fe:	1f 5f       	subi	r17, 0xFF	; 255
+// --- UART READ STRING ---
+void uart0_receive_string(char *buffer, uint8_t max_length) {
+    uint8_t index = 0;
+    char c;
+    
+    while (index < (max_length - 1)) {
+ 100:	21 2f       	mov	r18, r17
+ 102:	30 e0       	ldi	r19, 0x00	; 0
+ 104:	80 2f       	mov	r24, r16
+ 106:	90 e0       	ldi	r25, 0x00	; 0
+ 108:	01 97       	sbiw	r24, 0x01	; 1
+ 10a:	28 17       	cp	r18, r24
+ 10c:	39 07       	cpc	r19, r25
+ 10e:	4c f3       	brlt	.-46     	; 0xe2 <uart0_receive_string+0x10>
+            if (index > 0) break; // Break out to evaluate the token
+            continue;
+        }
+        buffer[index++] = c;
+    }
+    buffer[index] = '\0'; // Cap the string so strstr() can process it safely
+ 110:	c1 0f       	add	r28, r17
+ 112:	d1 1d       	adc	r29, r1
+ 114:	18 82       	st	Y, r1
+ 116:	df 91       	pop	r29
+ 118:	cf 91       	pop	r28
+ 11a:	1f 91       	pop	r17
+ 11c:	0f 91       	pop	r16
+ 11e:	08 95       	ret
+
+00000120 <main>:
+void uart0_init(uint16_t ubrr_value);
+char uart0_receive_char(void);
+void uart0_receive_string(char *buffer, uint8_t max_length);
+
+int main(void)
+{
+ 120:	cf 93       	push	r28
+ 122:	df 93       	push	r29
+ 124:	cd b7       	in	r28, 0x3d	; 61
+ 126:	de b7       	in	r29, 0x3e	; 62
+ 128:	a0 97       	sbiw	r28, 0x20	; 32
+ 12a:	0f b6       	in	r0, 0x3f	; 63
+ 12c:	f8 94       	cli
+ 12e:	de bf       	out	0x3e, r29	; 62
+ 130:	0f be       	out	0x3f, r0	; 63
+ 132:	cd bf       	out	0x3d, r28	; 61
+    // --- ?? UNLOCK PORTF JTAG PINS ?? ---
+    // Required to allow PF4, PF5, and PF6 to act as relay outputs instead of debug pins
+    MCUCSR = (1 << JTD);
+ 134:	80 e8       	ldi	r24, 0x80	; 128
+ 136:	84 bf       	out	0x34, r24	; 52
+    MCUCSR = (1 << JTD);
+ 138:	84 bf       	out	0x34, r24	; 52
+
+    // 103 = 9600 Baud for a 16 MHz Clock
+    uart0_init(103); 
+ 13a:	87 e6       	ldi	r24, 0x67	; 103
+ 13c:	90 e0       	ldi	r25, 0x00	; 0
+ 13e:	bc df       	rcall	.-136    	; 0xb8 <uart0_init>
+
+    // 1. Set the specific LED and Relay pins as OUTPUTS
+    DDRC |= (1 << LED1_PIN) | (1 << LED2_PIN) | (1 << LED3_PIN);
+ 140:	84 b3       	in	r24, 0x14	; 20
+ 142:	8a 61       	ori	r24, 0x1A	; 26
+ 144:	84 bb       	out	0x14, r24	; 20
+    DDRF |= (1 << RELAY1_PIN) | (1 << RELAY2_PIN) | (1 << RELAY3_PIN);
+ 146:	e1 e6       	ldi	r30, 0x61	; 97
+ 148:	f0 e0       	ldi	r31, 0x00	; 0
+ 14a:	80 81       	ld	r24, Z
+ 14c:	87 60       	ori	r24, 0x07	; 7
+ 14e:	80 83       	st	Z, r24
+
+    // 2. Start with everything strictly OFF for safety
+    PORTC &= ~((1 << LED1_PIN) | (1 << LED2_PIN) | (1 << LED3_PIN));
+ 150:	85 b3       	in	r24, 0x15	; 21
+ 152:	85 7e       	andi	r24, 0xE5	; 229
+ 154:	85 bb       	out	0x15, r24	; 21
+    PORTF &= ~((1 << RELAY1_PIN) | (1 << RELAY2_PIN) | (1 << RELAY3_PIN));
+ 156:	e2 e6       	ldi	r30, 0x62	; 98
+ 158:	f0 e0       	ldi	r31, 0x00	; 0
+ 15a:	80 81       	ld	r24, Z
+ 15c:	88 7f       	andi	r24, 0xF8	; 248
+ 15e:	80 83       	st	Z, r24
+    char rx_buffer[BUFFER_SIZE];
+
+    while (1)
+    {
+        // 3. Block and wait for a complete ESP32 command ending in '\n'
+        uart0_receive_string(rx_buffer, BUFFER_SIZE);
+ 160:	60 e2       	ldi	r22, 0x20	; 32
+ 162:	ce 01       	movw	r24, r28
+ 164:	01 96       	adiw	r24, 0x01	; 1
+ 166:	b5 df       	rcall	.-150    	; 0xd2 <uart0_receive_string>
+
+        // 4. Parse the command and switch the exact hardware pairs
+        
+        // --- LOOP 1 (LIG1) ---
+        if (strstr(rx_buffer, "L1ON") != NULL) {
+ 168:	60 e0       	ldi	r22, 0x00	; 0
+ 16a:	71 e0       	ldi	r23, 0x01	; 1
+ 16c:	ce 01       	movw	r24, r28
+ 16e:	01 96       	adiw	r24, 0x01	; 1
+ 170:	5c d0       	rcall	.+184    	; 0x22a <strstr>
+ 172:	89 2b       	or	r24, r25
+ 174:	49 f0       	breq	.+18     	; 0x188 <main+0x68>
+            PORTC |= (1 << LED1_PIN);    
+ 176:	85 b3       	in	r24, 0x15	; 21
+ 178:	82 60       	ori	r24, 0x02	; 2
+ 17a:	85 bb       	out	0x15, r24	; 21
+            PORTF |= (1 << RELAY1_PIN);  
+ 17c:	e2 e6       	ldi	r30, 0x62	; 98
+ 17e:	f0 e0       	ldi	r31, 0x00	; 0
+ 180:	80 81       	ld	r24, Z
+ 182:	84 60       	ori	r24, 0x04	; 4
+ 184:	80 83       	st	Z, r24
+ 186:	ec cf       	rjmp	.-40     	; 0x160 <main+0x40>
+        }
+        else if (strstr(rx_buffer, "L1OFF") != NULL) {
+ 188:	65 e0       	ldi	r22, 0x05	; 5
+ 18a:	71 e0       	ldi	r23, 0x01	; 1
+ 18c:	ce 01       	movw	r24, r28
+ 18e:	01 96       	adiw	r24, 0x01	; 1
+ 190:	4c d0       	rcall	.+152    	; 0x22a <strstr>
+ 192:	89 2b       	or	r24, r25
+ 194:	49 f0       	breq	.+18     	; 0x1a8 <main+0x88>
+            PORTC &= ~(1 << LED1_PIN);   
+ 196:	85 b3       	in	r24, 0x15	; 21
+ 198:	8d 7f       	andi	r24, 0xFD	; 253
+ 19a:	85 bb       	out	0x15, r24	; 21
+            PORTF &= ~(1 << RELAY1_PIN); 
+ 19c:	e2 e6       	ldi	r30, 0x62	; 98
+ 19e:	f0 e0       	ldi	r31, 0x00	; 0
+ 1a0:	80 81       	ld	r24, Z
+ 1a2:	8b 7f       	andi	r24, 0xFB	; 251
+ 1a4:	80 83       	st	Z, r24
+ 1a6:	dc cf       	rjmp	.-72     	; 0x160 <main+0x40>
+        }
+        
+        // --- LOOP 2 (LIG2) ---
+        else if (strstr(rx_buffer, "L2ON") != NULL) {
+ 1a8:	6b e0       	ldi	r22, 0x0B	; 11
+ 1aa:	71 e0       	ldi	r23, 0x01	; 1
+ 1ac:	ce 01       	movw	r24, r28
+ 1ae:	01 96       	adiw	r24, 0x01	; 1
+ 1b0:	3c d0       	rcall	.+120    	; 0x22a <strstr>
+ 1b2:	89 2b       	or	r24, r25
+ 1b4:	49 f0       	breq	.+18     	; 0x1c8 <main+0xa8>
+            PORTC |= (1 << LED2_PIN);    
+ 1b6:	85 b3       	in	r24, 0x15	; 21
+ 1b8:	88 60       	ori	r24, 0x08	; 8
+ 1ba:	85 bb       	out	0x15, r24	; 21
+            PORTF |= (1 << RELAY2_PIN);  
+ 1bc:	e2 e6       	ldi	r30, 0x62	; 98
+ 1be:	f0 e0       	ldi	r31, 0x00	; 0
+ 1c0:	80 81       	ld	r24, Z
+ 1c2:	82 60       	ori	r24, 0x02	; 2
+ 1c4:	80 83       	st	Z, r24
+        }
+        else if (strstr(rx_buffer, "L2OFF") != NULL) {
+ 1c6:	cc cf       	rjmp	.-104    	; 0x160 <main+0x40>
+ 1c8:	60 e1       	ldi	r22, 0x10	; 16
+ 1ca:	71 e0       	ldi	r23, 0x01	; 1
+ 1cc:	ce 01       	movw	r24, r28
+ 1ce:	01 96       	adiw	r24, 0x01	; 1
+ 1d0:	2c d0       	rcall	.+88     	; 0x22a <strstr>
+ 1d2:	89 2b       	or	r24, r25
+ 1d4:	49 f0       	breq	.+18     	; 0x1e8 <main+0xc8>
+            PORTC &= ~(1 << LED2_PIN);   
+ 1d6:	85 b3       	in	r24, 0x15	; 21
+ 1d8:	87 7f       	andi	r24, 0xF7	; 247
+ 1da:	85 bb       	out	0x15, r24	; 21
+            PORTF &= ~(1 << RELAY2_PIN); 
+ 1dc:	e2 e6       	ldi	r30, 0x62	; 98
+ 1de:	f0 e0       	ldi	r31, 0x00	; 0
+ 1e0:	80 81       	ld	r24, Z
+ 1e2:	8d 7f       	andi	r24, 0xFD	; 253
+ 1e4:	80 83       	st	Z, r24
+        }
+        
+        // --- LOOP 3 (LIG3) ---
+        else if (strstr(rx_buffer, "L3ON") != NULL) {
+ 1e6:	bc cf       	rjmp	.-136    	; 0x160 <main+0x40>
+ 1e8:	66 e1       	ldi	r22, 0x16	; 22
+ 1ea:	71 e0       	ldi	r23, 0x01	; 1
+ 1ec:	ce 01       	movw	r24, r28
+ 1ee:	01 96       	adiw	r24, 0x01	; 1
+ 1f0:	1c d0       	rcall	.+56     	; 0x22a <strstr>
+ 1f2:	89 2b       	or	r24, r25
+ 1f4:	49 f0       	breq	.+18     	; 0x208 <main+0xe8>
+            PORTC |= (1 << LED3_PIN);    
+ 1f6:	85 b3       	in	r24, 0x15	; 21
+ 1f8:	80 61       	ori	r24, 0x10	; 16
+ 1fa:	85 bb       	out	0x15, r24	; 21
+            PORTF |= (1 << RELAY3_PIN);  
+ 1fc:	e2 e6       	ldi	r30, 0x62	; 98
+ 1fe:	f0 e0       	ldi	r31, 0x00	; 0
+ 200:	80 81       	ld	r24, Z
+ 202:	81 60       	ori	r24, 0x01	; 1
+ 204:	80 83       	st	Z, r24
+        }
+        else if (strstr(rx_buffer, "L3OFF") != NULL) {
+ 206:	ac cf       	rjmp	.-168    	; 0x160 <main+0x40>
+ 208:	6b e1       	ldi	r22, 0x1B	; 27
+ 20a:	71 e0       	ldi	r23, 0x01	; 1
+ 20c:	ce 01       	movw	r24, r28
+ 20e:	01 96       	adiw	r24, 0x01	; 1
+ 210:	0c d0       	rcall	.+24     	; 0x22a <strstr>
+ 212:	89 2b       	or	r24, r25
+ 214:	09 f4       	brne	.+2      	; 0x218 <main+0xf8>
+ 216:	a4 cf       	rjmp	.-184    	; 0x160 <main+0x40>
+            PORTC &= ~(1 << LED3_PIN);   
+ 218:	85 b3       	in	r24, 0x15	; 21
+ 21a:	8f 7e       	andi	r24, 0xEF	; 239
+ 21c:	85 bb       	out	0x15, r24	; 21
+            PORTF &= ~(1 << RELAY3_PIN); 
+ 21e:	e2 e6       	ldi	r30, 0x62	; 98
+ 220:	f0 e0       	ldi	r31, 0x00	; 0
+ 222:	80 81       	ld	r24, Z
+ 224:	8e 7f       	andi	r24, 0xFE	; 254
+ 226:	80 83       	st	Z, r24
+ 228:	9b cf       	rjmp	.-202    	; 0x160 <main+0x40>
+
+0000022a <strstr>:
+ 22a:	fb 01       	movw	r30, r22
+ 22c:	51 91       	ld	r21, Z+
+ 22e:	55 23       	and	r21, r21
+ 230:	a9 f0       	breq	.+42     	; 0x25c <strstr+0x32>
+ 232:	bf 01       	movw	r22, r30
+ 234:	dc 01       	movw	r26, r24
+ 236:	4d 91       	ld	r20, X+
+ 238:	45 17       	cp	r20, r21
+ 23a:	41 11       	cpse	r20, r1
+ 23c:	e1 f7       	brne	.-8      	; 0x236 <strstr+0xc>
+ 23e:	59 f4       	brne	.+22     	; 0x256 <strstr+0x2c>
+ 240:	cd 01       	movw	r24, r26
+ 242:	01 90       	ld	r0, Z+
+ 244:	00 20       	and	r0, r0
+ 246:	49 f0       	breq	.+18     	; 0x25a <strstr+0x30>
+ 248:	4d 91       	ld	r20, X+
+ 24a:	40 15       	cp	r20, r0
+ 24c:	41 11       	cpse	r20, r1
+ 24e:	c9 f3       	breq	.-14     	; 0x242 <strstr+0x18>
+ 250:	fb 01       	movw	r30, r22
+ 252:	41 11       	cpse	r20, r1
+ 254:	ef cf       	rjmp	.-34     	; 0x234 <strstr+0xa>
+ 256:	81 e0       	ldi	r24, 0x01	; 1
+ 258:	90 e0       	ldi	r25, 0x00	; 0
+ 25a:	01 97       	sbiw	r24, 0x01	; 1
+ 25c:	08 95       	ret
+
+0000025e <_exit>:
+ 25e:	f8 94       	cli
+
+00000260 <__stop_program>:
+ 260:	ff cf       	rjmp	.-2      	; 0x260 <__stop_program>
